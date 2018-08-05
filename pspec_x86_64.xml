@@ -2,10 +2,10 @@
     <Source>
         <Name>simplenote</Name>
         <Packager>
-            <Name>Alec Scott</Name>
-            <Email>alecbcs@gmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-or-later</License>
         <PartOf>office.notes</PartOf>
         <Summary xml:lang="en">The simplest way to keep notes.</Summary>
         <Description xml:lang="en">A Simplenote React app packaged in Electron.
@@ -19,20 +19,102 @@
 </Description>
         <PartOf>office.notes</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/simplenote</Path>
             <Path fileType="data">/usr/share/applications/simplenote.desktop</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/pixmaps/simplenote.png</Path>
-            <Path fileType="data">/usr/share/simplenote</Path>
+            <Path fileType="doc">/usr/share/doc/simplenote/changelog.gz</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/simplenote.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/simplenote.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/256x256/apps/simplenote.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/2x2/apps/simplenote.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/simplenote.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/512x512/apps/simplenote.png</Path>
+            <Path fileType="data">/usr/share/simplenote/LICENSE.electron.txt</Path>
+            <Path fileType="data">/usr/share/simplenote/LICENSES.chromium.html</Path>
+            <Path fileType="data">/usr/share/simplenote/blink_image_resources_200_percent.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/content_resources_200_percent.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/content_shell.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/icudtl.dat</Path>
+            <Path fileType="data">/usr/share/simplenote/libffmpeg.so</Path>
+            <Path fileType="data">/usr/share/simplenote/libnode.so</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/am.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ar.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/bg.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/bn.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ca.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/cs.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/da.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/de.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/el.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/en-GB.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/en-US.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/es-419.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/es.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/et.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/fa.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/fake-bidi.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/fi.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/fil.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/fr.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/gu.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/he.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/hi.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/hr.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/hu.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/id.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/it.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ja.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/kn.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ko.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/lt.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/lv.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ml.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/mr.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ms.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/nb.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/nl.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/pl.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/pt-BR.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/pt-PT.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ro.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ru.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/sk.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/sl.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/sr.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/sv.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/sw.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/ta.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/te.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/th.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/tr.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/uk.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/vi.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/zh-CN.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/locales/zh-TW.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/natives_blob.bin</Path>
+            <Path fileType="data">/usr/share/simplenote/pdf_viewer_resources.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar.unpacked/node_modules/ds-store/LICENSE</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar.unpacked/node_modules/ds-store/assets/DSStore-clean</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar.unpacked/node_modules/ds-store/index.js</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar.unpacked/node_modules/ds-store/lib/buddy-allocator.js</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar.unpacked/node_modules/ds-store/lib/ds-store.js</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar.unpacked/node_modules/ds-store/lib/entry.js</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar.unpacked/node_modules/ds-store/lib/partition.js</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/app.asar.unpacked/node_modules/ds-store/package.json</Path>
+            <Path fileType="data">/usr/share/simplenote/resources/electron.asar</Path>
+            <Path fileType="data">/usr/share/simplenote/simplenote</Path>
+            <Path fileType="data">/usr/share/simplenote/snapshot_blob.bin</Path>
+            <Path fileType="data">/usr/share/simplenote/ui_resources_200_percent.pak</Path>
+            <Path fileType="data">/usr/share/simplenote/views_resources_200_percent.pak</Path>
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-02-19</Date>
-            <Version>1.1.3</Version>
+        <Update release="10">
+            <Date>2018-08-05</Date>
+            <Version>1.1.6</Version>
             <Comment>Packaging update</Comment>
-            <Name>Alec Scott</Name>
-            <Email>alecbcs@gmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>

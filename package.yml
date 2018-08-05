@@ -1,9 +1,9 @@
 name       : simplenote
-version    : 1.1.3
-release    : 9
+version    : 1.1.6
+release    : 10
 source     :
-    - https://github.com/Automattic/simplenote-electron/releases/download/v1.1.3/Simplenote-linux-1.1.3.deb : a26f0515922c71dcda289ec47b07b129e35748d677410a17d89d21e6e846cba7
-license    : GPL-2.0
+    - https://github.com/Automattic/simplenote-electron/releases/download/v1.1.6/simplenote_1.1.6_amd64.deb : d48d6a56beace13ca0c82e1bf540360685e3685bb29855dc6dc401c485449c4c
+license    : GPL-2.0-or-later
 component  : office.notes
 summary    : The simplest way to keep notes.
 description: |
@@ -18,9 +18,14 @@ builddeps  :
     - pkgconfig(xtst)
     - cups-devel
 install    : |
-    ar xf $sources/Simplenote-linux-${version}.deb
+    ar xf $sources/simplenote_${version}_amd64.deb
     mkdir root
-    tar xf data.tar.gz -C root
+    tar xf data.tar.xz -C root
+
+    mv root/opt/Simplenote root/usr/share/simplenote
+    rm -d root/opt/
+    sed -i 's:/opt/Simplenote/::g' root/usr/share/applications/simplenote.desktop
+
     install -D -d -m 00755 $installdir/usr/bin
     cp -Rv root/* $installdir/.
-    ln -sv ../share/simplenote/simplenote $installdir/usr/bin/simplenote
+    ln -sv /usr/share/simplenote/simplenote $installdir/usr/bin/simplenote
